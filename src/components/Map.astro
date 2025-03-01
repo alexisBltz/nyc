@@ -1,0 +1,17 @@
+---
+// Map.astro
+---
+
+<section class="py-8">
+    <div class="container mx-auto max-w-6xl">
+        <div class="w-full h-64 md:h-96 rounded-lg overflow-hidden">
+            <!-- Para una implementación real, reemplaza esto con un mapa interactivo usando Leaflet o Google Maps -->
+            <img
+                    src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/-122.4194,37.7749,12,0/1200x600?access_token=YOUR_MAPBOX_TOKEN"
+                    alt="Mapa de San Francisco"
+                    class="w-full h-full object-cover"
+                    onerror="this.src='/placeholder.svg?height=600&width=1200&text=San Francisco Map'"
+            />
+        </div>
+    </div>
+</section>
