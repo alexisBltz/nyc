@@ -1,0 +1,73 @@
+---
+// VisionTestimonials.astro
+---
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    {/* Vision and First Testimonial */}
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+        <div class="space-y-8">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-gray-800">Vision and mission</h2>
+                <p class="text-gray-600">
+                    Having a clear vision of the world your product and team are trying to create brings clarity to what projects you initiate, who you hire and what you focus on.
+                </p>
+                <p class="text-gray-600">
+                    Where your vision is for a future, often utopian state, a mission is what you are doing now and will form part of the journey towards this vision.
+                </p>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <img
+                        src="/placeholder.svg?height=48&width=48"
+                        alt="James Mansfield"
+                        class="w-12 h-12 rounded-full"
+                />
+                <div>
+                    <p class="font-medium text-gray-900">James Mansfield</p>
+                    <p class="text-sm text-gray-500">Product Design Leader</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative">
+            <img
+                    src="/placeholder.svg?height=400&width=400"
+                    alt="Vision illustration"
+                    class="w-full h-auto"
+            />
+        </div>
+    </div>
+
+    {/* Second Testimonial */}
+    <div class="grid md:grid-cols-2 gap-12 items-start mb-24">
+        <div class="bg-gray-900 p-6 rounded-lg">
+            <img
+                    src="/placeholder.svg?height=200&width=200"
+                    alt="Tesla Logo"
+                    class="w-48 h-48 object-contain mb-4"
+            />
+        </div>
+
+        <div class="space-y-6">
+            <p class="text-gray-600 text-lg">
+                Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales.
+            </p>
+            <div>
+                <p class="font-medium text-gray-900">Tim Smith</p>
+                <p class="text-sm text-gray-500">British Dragon Boat Racing Association</p>
+            </div>
+        </div>
+    </div>
+
+    {/* Partner Logos */}
+    <div class="flex flex-wrap justify-center gap-12 items-center">
+        {[1, 2, 3, 4, 5, 6].map((index) => (
+                <img
+                        key={index}
+                        src={`/placeholder.svg?height=40&width=120&text=Partner${index}`}
+                        alt={`Partner logo ${index}`}
+                        class="h-8 w-auto grayscale hover:grayscale-0 transition-all"
+                />
+        ))}
+    </div>
+</section>
