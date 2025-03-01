@@ -1,17 +1,21 @@
 ---
-// Map.astro
 ---
-
-<section class="py-8">
-    <div class="container mx-auto max-w-6xl">
-        <div class="w-full h-64 md:h-96 rounded-lg overflow-hidden">
-            <!-- Para una implementación real, reemplaza esto con un mapa interactivo usando Leaflet o Google Maps -->
-            <img
-                    src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/-122.4194,37.7749,12,0/1200x600?access_token=YOUR_MAPBOX_TOKEN"
-                    alt="Mapa de San Francisco"
-                    class="w-full h-full object-cover"
-                    onerror="this.src='/placeholder.svg?height=600&width=1200&text=San Francisco Map'"
-            />
+<section class="py-12 bg-gray-100">
+    <div class="container mx-auto max-w-6xl px-4">
+        <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">
+            Nuestra Ubicación
+        </h2>
+        <div class="w-full rounded-lg overflow-hidden shadow-lg">
+            <div class="relative" style="padding-top: 50%;">
+                <iframe
+                        class="absolute top-0 left-0 w-full h-full rounded-lg"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1609.0872792922462!2d-71.49980268926507!3d-16.420961929065815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b6af1195b91%3A0xe81b05f0469dffe5!2zQmFkw6lu!5e0!3m2!1ses!2spe!4v1740810974095!5m2!1ses!2spe"
+                        style="border:0;"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
     </div>
 </section>
